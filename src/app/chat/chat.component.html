@@ -34,11 +34,13 @@
         <i class="fa fa-paper-plane" aria-hidden="true"></i>
     </button>
     </form>
-    <div class="chatbot-body-input">
-      <input type="text" placeholder="Type a message..." />
-      <div class="chatbot-body-input-send">
-        <i class="fa fa-paper-plane" aria-hidden="true"></i>
-      </div>
+    <div class="alert alert-success">
+        <!-- check in div weather json present result -->
+       
+            <pre>
+                {{result | json}}
+            </pre>
     </div>
+    
   </div>
 </div>

@@ -26,10 +26,10 @@ export class ChatComponent implements OnInit {
   }
   handleAskGPT(){ 
     let url ="https://api.openai.com/v1/chat/completions";
-    let httpHeaders= new HttpHeaders().set("Authorisation","Bearer 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");
-
+    let httpHeaders= new HttpHeaders()
+    .set("Authorization", "Bearer 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");
     let payload={
-      model:"ggpt-3.5-turbo",
+      model:"gpt-3.5-turbo",
       messages:this.messages
     }
 
