@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "food-bridge-8453": {
+      "hosting": {
+        "Food-Bridge": [
+          "food-bridge-8453"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "food-bridge-8453"
+  }
+}
