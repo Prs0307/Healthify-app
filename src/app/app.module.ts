@@ -32,6 +32,7 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChatComponent } from './chat/chat.component';
 // import { UserDashboardRoutingModule } from './user-dashboard/user-dashboard-routing.module';
 
 
@@ -56,7 +57,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PagenotfoundComponent,
     FooterComponent,
     ResetPasswordComponent,
-    SearchComponent
+    SearchComponent,
+    ChatComponent
   
 
   ],

@@ -1,16 +1,22 @@
 .homesection1-body{
+    color: #173f67;
     padding-top: 70px;
     background-image: linear-gradient(to top, #f3c0a1 2% , transparent 20%);
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: 100vw;
 }
+
 
 .homesection1-body::before{
     content: "";
     position: absolute;
     background: url(/assets/fooddonatebg1.jpg) no-repeat center center/cover;
+    background-position: 600px 50px;
+    background-size: 320px 330px;
     height: 100vh;
     padding-top: 10vh;
     width: 100vw;
@@ -30,10 +36,38 @@
     flex-direction: column;
     justify-content: center;
 }
+.pop-up-button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    animation: pop-up 0.9s ease-in-out infinite;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
 .homesection1-text button{
-    background-color: #EB6019;
+    background-color: #142a4c;
     color: #ffffff;
-    border: 1px solid #EB6019;
+    border: 1px solid #a6a5a5;
     width: 150px;
     border-radius: 10px;
     padding: 7px 20px;
@@ -42,6 +76,12 @@
     font-size: 15px;
     font-weight: 600;
 }
+/* chat bot container */
+#chatbotContainer {
+    display: none;
+    /* Other styling properties */
+  }
+  
 button a{
     text-decoration: none;
     color: #ffffff;
