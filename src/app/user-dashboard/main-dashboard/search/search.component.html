@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="search-container">
+     Search Food Here : <input type="search">
+     <button type="button" class="btn btn-primary add-food" data-bs-toggle="modal" data-bs-target="#addNodeModel">Add Food For Donation</button>
+     <div class="modal fade" id="addNodeModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Items</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="noteForm">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Organization Name:</label>
+                <input type="text" class="form-control" id="recipient-name" formControlName="organizationName">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Place:</label>
+                <input type="text" class="form-control" id="recipient-name" formControlName="place">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Mobile Number:</label>
+                <input type="number" class="form-control" accept="*.png.jpg" id="recipient-name" formControlName="mobile">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Food Image:</label>
+                <input type="file" class="form-control" id="recipient-name" formControlName="image">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Food Discription</label>
+                <textarea class="form-control" id="message-text" formControlName="decription"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" (click)="addNote()" [disabled]="noteForm.invalid">Add Item</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="food-details-container">
+      <div class="div-container" *ngFor="let note of noteData; let i = index" >
+          <div class="Food-card event-card">
+              <div class="card-body">
+                <!-- <input type="file" (change)="handleFileUpload($event)"> -->
+
+                  <img src="assets/donate.jpg" alt="" id="info-img">
+                  <div class="main-desc" > <p class="tagging-type-A "  >Available</p></div>
+ 
+                  <h5 class="card-title name">{{note.organizationName}} </h5>
+                  <!-- <h5 class="qty"> </h5> -->
+                  <div class="content-description">
+                  <h5 class="placeName" style="font-weight: 100; color: rgb(77, 75, 75); font-size: 1rem;">Place : {{note.place}}</h5>
+                  <h5 class="contact-number" style="font-weight: 300; font-size: 1rem;">Contact Number : {{note.mobile}}</h5>
+                  <h5 class="contact-number" style="font-weight: 300; font-size: 1rem;">Food Discription : {{note.desc}}</h5>
+                </div>
+                  <button class="book-now" (click)="itemBooked(i)"> 
+                      Book Now    
+                  </button>
+              </div>
+          </div>
+          <!-- {{ i + 1 }}. {{ note }} -->
+      </div>
+  </div>
+  </div>
+  <div class="food-data">
+      
+  </div>
+</div>
