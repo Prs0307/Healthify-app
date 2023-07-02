@@ -26,7 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 STEP 1: Clone the repository from GitHub.
 
-git clone https://github.com/ankit8453/foodbridge
+git clone
 
 STEP 2: Change the directory to the repository.
 
