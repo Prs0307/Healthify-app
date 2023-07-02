@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class OurMissionComponent {
   readMore = false;
-  text = ` Our organization is driven by a resolute commitment to eliminating hunger and malnutrition worldwide.
-  We believe that the key to achieving this lies in providing sustainable solutions that
-   empower individuals and communities to take ownership of their food security. To that end,
-    we work hand-in-hand with local communities, governments, and organizations to implement innovative and effective
-     programs that tackle the root causes of hunger in a way that is tailored to the unique needs of each community 
-     Our laser focus on sustainable, 
-      scalable solutions is a testament to our unyielding determination to create a world where everyone has access to the food they
-       need to thrive. We invite you to join us in our quest to make a tangible and long-lasting impact in the fight against hunger 
-       and malnutrition worldwide.`;
+  text = ` Medical Symptom Diagnosis Assistant is designed to be your trusted companion, guiding you through a 
+  comprehensive analysis of your symptoms. Whether you're looking for general information or seeking a possible diagnosis,
+   our intelligent system is equipped to assist you every step of the way.
+
+  Using the latest advancements in medical knowledge and cutting-edge artificial intelligence, we've created a platform that 
+  can analyze your symptoms and provide you with potential explanations and recommendations. While our assistant can't replace
+   professional medical advice, it can certainly help you gather valuable insights and prepare for your healthcare consultations.
+  
+  Navigating our website is simple and intuitive.`;
   
 }
