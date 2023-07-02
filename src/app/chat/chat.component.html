@@ -23,6 +23,7 @@
         </div>
       </div>
     </div>
+    <div class="card">
     <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()">
         <div class="mb-3">
         <label for="queries" class="form-label">Queries</label>
@@ -31,16 +32,20 @@
     <button class="btn btn-success">
         <!-- Send Query -->
         Send Query 
-        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        <!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
     </button>
     </form>
+    <p>
+        jason
+    </p>
     <div class="alert alert-success">
+        
         <!-- check in div weather json present result -->
        
             <pre>
                 {{result | json}}
             </pre>
     </div>
-    
+</div>
   </div>
 </div>
