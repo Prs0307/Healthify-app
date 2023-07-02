@@ -1,1 +1,44 @@
-<p>chat works!</p>
+<!-- <p>chat works!</p> -->
+<!-- ChatBot By CHAT-GPT api Chat box -->
+<div class="p-3">
+<div class="chatbot">
+  <div class="chatbot-header">
+    <div class="chatbot-header-title">Healthify Chatbot</div>
+    <div class="chatbot-header-buttons">
+      <div class="chatbot-header-button chatbot-header-button-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <div class="chatbot-header-button chatbot-header-button-minimize">
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <div class="chatbot-body">
+    <div class="chatbot-body-messages">
+      <div class="chatbot-body-message chatbot-body-message-bot">
+        <div class="chatbot-body-message-content">
+          <div class="chatbot-body-message-text">
+            <p>Hi, I'm Healthify Chatbot. I'm here to help you with your health related queries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form [formGroup]="queryFormGroup" (ngSubmit)="handleAskGPT()">
+        <div class="mb-3">
+        <label for="queries" class="form-label">Queries</label>
+        <textarea formControlName="query" for="cntrl" class="form-control"></textarea>
+    </div>
+    <button class="btn btn-success">
+        <!-- Send Query -->
+        Send Query 
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+    </button>
+    </form>
+    <div class="chatbot-body-input">
+      <input type="text" placeholder="Type a message..." />
+      <div class="chatbot-body-input-send">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
