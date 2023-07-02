@@ -12,13 +12,17 @@ import { JoinUsComponent } from './join-us/join-us.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ForgetPassComponent } from './forget-pass/forget-pass.component';
 import { ResetPasswordComponent } from './user-dashboard/reset-password/reset-password.component';
+import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   // {path:'', component:HomepageComponent, },
   {path:'', redirectTo:'header-pages/homepage', pathMatch:'full'},
+  {path:'chat', component:ChatComponent},
   {path:'header-pages', component:HeaderPagesComponent, children:[
     {path:'homepage', component:HomepageComponent, pathMatch:'full', children:[
       {path:'sign-up', component:SignUpComponent},
+   
+
     ]},
   ]},
   {path:'header-pages/user-dashboard', redirectTo:'user-dashboard'},
